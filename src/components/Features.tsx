@@ -10,7 +10,7 @@ const Features = () => {
       title: "AI Process Optimization",
       description: "Advanced machine learning algorithms analyze your brewing process in real-time, identifying bottlenecks and optimizing production efficiency.",
       stats: "35% Efficiency Boost",
-      image: hopsAiIcon,
+      // image: hopsAiIcon,
       gradient: "tech-gradient"
     },
     {
@@ -25,7 +25,7 @@ const Features = () => {
       title: "Drone Analytics",
       description: "Autonomous drones provide aerial inspection of tanks, equipment maintenance insights, and facility security monitoring.",
       stats: "99.9% Uptime",
-      image: droneIcon,
+      // image: droneIcon,
       gradient: "tech-gradient"
     }
   ];

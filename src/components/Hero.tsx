@@ -4,7 +4,7 @@ import heroImage from "@/assets/brewery-ai-hero.jpg";
 
 const Hero = () => {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <img 
@@ -55,8 +55,8 @@ const Hero = () => {
       </div>
 
       {/* Floating Elements */}
-      <div className="absolute top-20 right-20 animate-pulse opacity-30">
-        <div className="w-3 h-3 rounded-full brewery-gradient"></div>
+      <div className="absolute top-20 right-20 animate-pulse opacity-20 delay-1000">
+        <div className="w-4 h-4 rounded-full bg-accent"></div>
       </div>
       <div className="absolute bottom-40 left-20 animate-pulse opacity-20 delay-1000">
         <div className="w-2 h-2 rounded-full bg-primary"></div>
