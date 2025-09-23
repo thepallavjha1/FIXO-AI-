@@ -4,7 +4,7 @@ import { Card, CardContent } from "@/components/ui/card";
 
 const CTA = () => {
   return (
-    <section id="contact" className="py-24 px-6 bg-gradient-to-t from-secondary/30 to-background">
+    <section className="py-24 px-6 bg-gradient-to-t from-secondary/30 to-background">
       <div className="max-w-4xl mx-auto">
         <Card className="surface-glass border-0 shadow-glow overflow-hidden">
           <CardContent className="p-12 text-center">
