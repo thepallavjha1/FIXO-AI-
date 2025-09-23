@@ -8,8 +8,8 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    /* FIXO Theme - Clean & Modern */
-    --background: 0 0% 99%;
+    /* Brewery & AI Optimization Theme */
+    --background: 0 0% 98%;
     --foreground: 220 26% 14%;
 
     --card: 0 0% 100%;
@@ -18,46 +18,47 @@ All colors MUST be HSL.
     --popover: 0 0% 100%;
     --popover-foreground: 220 26% 14%;
 
-    /* FIXO Blue - Primary brand color */
-    --primary: 220 91% 28%;
+    /* Deep blue for tech/AI elements */
+    --primary: 220 91% 25%;
     --primary-foreground: 0 0% 98%;
 
-    /* Light gray for secondary elements */
-    --secondary: 0 0% 96%;
+    /* Subtle gray for secondary elements */
+    --secondary: 220 14% 96%;
     --secondary-foreground: 220 26% 14%;
 
-    --muted: 0 0% 96%;
+    --muted: 220 14% 96%;
     --muted-foreground: 220 8.9% 46.1%;
 
-    /* Orange accent for highlights */
-    --accent: 25 95% 53%;
-    --accent-foreground: 0 0% 100%;
+    /* Brewery amber accent */
+    --accent: 35 84% 55%;
+    --accent-foreground: 220 26% 14%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
     --border: 220 13% 91%;
     --input: 220 13% 91%;
-    --ring: 220 91% 28%;
+    --ring: 220 91% 25%;
 
     --radius: 0.75rem;
 
-    /* FIXO Custom Colors */
-    --fixo-blue: 220 91% 28%;
-    --fixo-orange: 25 95% 53%;
-    --tech-blue: 220 91% 28%;
-    --tech-blue-light: 220 91% 38%;
-    --surface-light: 0 0% 98%;
+    /* Custom brewery/AI colors */
+    --brewery-gold: 35 84% 55%;
+    --brewery-amber: 25 95% 53%;
+    --tech-blue: 220 91% 25%;
+    --tech-blue-light: 220 91% 35%;
+    --tech-cyan: 191 91% 55%;
+    --surface-glass: 220 14% 96%;
     
     /* Gradients */
-    --gradient-primary: linear-gradient(135deg, hsl(var(--fixo-blue)), hsl(var(--tech-blue-light)));
-    --gradient-orange: linear-gradient(135deg, hsl(var(--fixo-orange)), hsl(25 95% 58%));
-    --gradient-subtle: linear-gradient(180deg, hsl(var(--background)), hsl(var(--surface-light)));
+    --gradient-hero: linear-gradient(135deg, hsl(var(--tech-blue)), hsl(var(--tech-blue-light)));
+    --gradient-accent: linear-gradient(135deg, hsl(var(--brewery-amber)), hsl(var(--brewery-gold)));
+    --gradient-subtle: linear-gradient(180deg, hsl(var(--background)), hsl(var(--surface-glass)));
 
     /* Shadows */
-    --shadow-soft: 0 4px 20px -8px hsl(var(--fixo-blue) / 0.15);
-    --shadow-card: 0 2px 8px -2px hsl(220 26% 14% / 0.08);
-    --shadow-button: 0 4px 12px -4px hsl(var(--fixo-blue) / 0.3);
+    --shadow-soft: 0 4px 20px -8px hsl(var(--tech-blue) / 0.15);
+    --shadow-glow: 0 0 40px hsl(var(--brewery-gold) / 0.3);
+    --shadow-card: 0 10px 30px -10px hsl(220 26% 14% / 0.1);
 
     /* Typography */
     --font-display: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
@@ -156,35 +157,33 @@ All colors MUST be HSL.
 }
 
 @layer components {
-  .fixo-gradient {
-    background: var(--gradient-orange);
+  .brewery-gradient {
+    background: var(--gradient-accent);
   }
 
-  .blue-gradient {
-    background: var(--gradient-primary);
+  .tech-gradient {
+    background: var(--gradient-hero);
   }
 
-  .text-orange {
-    color: hsl(var(--fixo-orange));
-  }
-
-  .bg-orange {
-    background-color: hsl(var(--fixo-orange));
+  .surface-glass {
+    background: hsl(var(--surface-glass));
+    backdrop-filter: blur(10px);
+    border: 1px solid hsl(var(--border));
   }
 
   .shadow-card {
     box-shadow: var(--shadow-card);
   }
 
-  .shadow-button {
-    box-shadow: var(--shadow-button);
+  .shadow-glow {
+    box-shadow: var(--shadow-glow);
   }
 
   .hover-lift {
-    @apply transition-smooth hover:-translate-y-1;
+    @apply transition-smooth hover:-translate-y-1 hover:shadow-card;
   }
 
   .interactive-card {
-    @apply bg-card hover-lift cursor-pointer rounded-xl;
+    @apply surface-glass hover-lift cursor-pointer;
   }
 }

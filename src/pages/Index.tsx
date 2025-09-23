@@ -1,16 +1,22 @@
-import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import Features from "@/components/Features";
 import Stats from "@/components/Stats";
+import CTA from "@/components/CTA";
+import Navigation from "@/components/Navigation";
+import FloatingElements from "@/components/FloatingElements";
 
 const Index = () => {
   return (
-    <main className="min-h-screen">
-      <Header />
-      <Hero />
-      <Features />
-      <Stats />
-    </main>
+    <>
+      <FloatingElements />
+      <Navigation />
+      <main className="min-h-screen">
+        <Hero />
+        <Features />
+        <Stats />
+        <CTA />
+      </main>
+    </>
   );
 };
 
