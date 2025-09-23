@@ -13,7 +13,7 @@ const NotFound = () => {
   return (
     <div className="flex min-h-screen items-center justify-center bg-background">
       <div className="text-center max-w-md mx-auto px-6">
-        <div className="tech-gradient w-24 h-24 rounded-3xl flex items-center justify-center mx-auto mb-8">
+        <div className="bg-primary w-24 h-24 rounded-3xl flex items-center justify-center mx-auto mb-8">
           <div className="text-4xl font-black text-white">404</div>
         </div>
         
@@ -34,7 +34,7 @@ const NotFound = () => {
           
           <Button 
             onClick={() => window.location.href = "/"}
-            className="tech-gradient text-white px-6 py-3"
+            className="blue-gradient text-white px-6 py-3 shadow-button border-0"
           >
             <Home className="mr-2 h-4 w-4" />
             Return Home
