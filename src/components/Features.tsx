@@ -3,7 +3,7 @@ import FeatureCard from "./FeatureCard";
 import hopsAiIcon from "/src/assets/hops-ai-icon.png";
 import droneIcon from "/src/assets/drone-brewery-icon.png";
 import prodImage from "/src/assets/prod.png";
-
+import armImage from "/src/assets/arm.png";
 const Features = () => {
   const features = [
     {
@@ -32,8 +32,8 @@ const Features = () => {
   ];
 
   return (
-    <section className="py-4 px-6 bg-gradient-to-b from-background to-secondary/30">
-      <div className="max-w-7xl mx-auto">
+    <section className="py-4 px-6 bg-gradient-to-b from-background to-secondary/30 relative">
+      <div className="max-w-7xl mx-auto relative">
         <div className="text-center mb-20">
           <h2 className="text-4xl md:text-6xl font-black text-display mb-6 leading-tight">
             <span className="text-foreground">Intelligent Brewing</span>
@@ -58,12 +58,21 @@ const Features = () => {
         </div>
       </div>
 
-      <div className="absolute top-[90%] right-[-15%] w-90 h-auto">
-            <img 
-              src={prodImage} 
-              alt="Floating brewery element" 
-              className="w-[250px] sm:w-[320px] md:w-[400px] lg:w-[500px] xl:w-[650px] h-auto pointer-events-none"
-            />
+    {/* Pictures  */}
+      <div className="absolute top-[-45%] left-[-10%] z-0">
+              <img 
+                src={armImage} 
+                alt="Brewery element" 
+                className="w-[280px] sm:w-[350px] md:w-[450px] lg:w-[550px] xl:w-[700px] h-auto pointer-events-none"
+              />
+      </div>
+
+      <div className="absolute top-[-25%] right-[-18%] w-90 h-auto z-0">
+          <img 
+            src={prodImage} 
+            alt="Floating brewery element" 
+            className="w-[250px] sm:w-[320px] md:w-[400px] lg:w-[500px] xl:w-[650px] h-auto pointer-events-none"
+          />
       </div>
     </section>
   );
