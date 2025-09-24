@@ -1,4 +1,4 @@
-import fixoLogo from "@/assets/fixo-logo.png";
+import fixoLogo from "/src/assets/LOGO.png";
 
 const Header = () => {
   return (
@@ -8,7 +8,7 @@ const Header = () => {
           {/* FIXO Logo */}
           <div className="flex items-center space-x-3">
             <img 
-              src="/src/assets/LOGO.png" 
+              src={fixoLogo}
               alt="FIXO Logo" 
               className="h-10 w-auto object-contain"
             />

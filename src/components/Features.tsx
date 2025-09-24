@@ -1,7 +1,8 @@
 import { Brain, Radar, Zap } from "lucide-react";
 import FeatureCard from "./FeatureCard";
-import hopsAiIcon from "@/assets/hops-ai-icon.png";
-import droneIcon from "@/assets/drone-brewery-icon.png";
+import hopsAiIcon from "/src/assets/hops-ai-icon.png";
+import droneIcon from "/src/assets/drone-brewery-icon.png";
+import prodImage from "/src/assets/prod.png";
 
 const Features = () => {
   const features = [
@@ -59,7 +60,7 @@ const Features = () => {
 
       <div className="absolute top-[90%] right-[-15%] w-90 h-auto">
             <img 
-              src="/src/assets/prod.png" 
+              src={prodImage} 
               alt="Floating brewery element" 
               className="w-[250px] sm:w-[320px] md:w-[400px] lg:w-[500px] xl:w-[650px] h-auto pointer-events-none"
             />

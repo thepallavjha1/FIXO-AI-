@@ -1,6 +1,9 @@
 import { ArrowRight, Play, Brain, Radar, Zap } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import heroImage from "@/assets/brewery-ai-hero.jpg";
+import heroImage from "/src/assets/brewery-ai-hero.jpg";
+import breweryImage from "/src/assets/Brewery.png";
+import armImage from "/src/assets/arm.png";
+import prodImage from "/src/assets/prod.png";
 import FeatureCard from "./FeatureCard";
 
 
@@ -60,7 +63,7 @@ const Hero = () => {
         {/* Pictures */}
         <div className="absolute -bottom-20 left-[-10%] z-0">
             <img 
-              src="/src/assets/arm.png" 
+              src={armImage} 
               alt="Brewery element" 
               className="w-[280px] sm:w-[350px] md:w-[450px] lg:w-[550px] xl:w-[700px] h-auto pointer-events-none"
             />
@@ -69,7 +72,7 @@ const Hero = () => {
 
           <div className="absolute top-0 right-[-18%] z-0">
             <img 
-              src="/src/assets/Brewery.png" 
+              src={breweryImage} 
               alt="Floating brewery element" 
               className="w-[250px] sm:w-[320px] md:w-[400px] lg:w-[500px] xl:w-[650px] h-auto pointer-events-none"
             />
