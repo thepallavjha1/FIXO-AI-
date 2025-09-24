@@ -31,7 +31,7 @@ const Features = () => {
   ];
 
   return (
-    <section className="py-24 px-6 bg-gradient-to-b from-background to-secondary/30">
+    <section className="py-4 px-6 bg-gradient-to-b from-background to-secondary/30">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-20">
           <h2 className="text-4xl md:text-6xl font-black text-display mb-6 leading-tight">
@@ -55,6 +55,14 @@ const Features = () => {
             </div>
           ))}
         </div>
+      </div>
+
+      <div className="absolute top-[90%] right-[-15%] w-90 h-auto">
+            <img 
+              src="/src/assets/prod.png" 
+              alt="Floating brewery element" 
+              className="w-[250px] sm:w-[320px] md:w-[400px] lg:w-[500px] xl:w-[650px] h-auto pointer-events-none"
+            />
       </div>
     </section>
   );
