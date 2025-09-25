@@ -24,9 +24,11 @@ const Hero = () => {
               <h1 className="text-5xl md:text-7xl lg:text-8xl font-black text-display mb-8 leading-none">
                 <span className="text-foreground">Optimize Your</span>
                 <br />
-                <span className="brewery-gradient bg-clip-text text-transparent">
+                {/* <span className="brewery-gradient bg-clip-text text-transparent"> Brewery Operations </span> */}
+                <span className="brewery-gradient bg-clip-text text-transparent inline-block px-2">
                   Brewery Operations
                 </span>
+
                 <br />
                 <span className="text-foreground">with AI</span>
               </h1>
