@@ -61,11 +61,11 @@ const Hero = () => {
 
 
         {/* Picture */}
-          <div className="absolute top-0 right-[-29%] z-0">
+          <div className="absolute top-0 right-[-29%] z-0 hidden lg:block">
             <img 
               src={breweryImage} 
               alt="Floating brewery element" 
-              className="w-[280px] sm:w-[350px] md:w-[430px] lg:w-[530px] xl:w-[680px] h-auto pointer-events-none"
+              className="w-[530px] xl:w-[680px] h-auto pointer-events-none"
             />
           </div>
 

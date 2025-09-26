@@ -59,7 +59,7 @@ const Features = () => {
       </div>
 
     {/* Pictures  */}
-      <div className="absolute top-[-45%] left-[-10%] z-0">
+      <div className="absolute top-[-45%] left-[-10%] z-0 hidden lg:block">
               <img 
                 src={armImage} 
                 alt="Brewery element" 
@@ -67,7 +67,7 @@ const Features = () => {
               />
       </div>
 
-      <div className="absolute top-[-25%] right-[-18%] w-90 h-auto z-0">
+      <div className="absolute top-[-25%] right-[-18%] w-90 h-auto z-0 hidden lg:block">
           <img 
             src={prodImage} 
             alt="Floating brewery element" 
