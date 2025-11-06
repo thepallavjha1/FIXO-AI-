@@ -5,26 +5,26 @@ const Stats = () => {
     {
       icon: TrendingUp,
       value: "45%",
-      label: "Production Increase",
-      description: "Average output improvement"
+      label: "Defect Reduction",
+      description: "Average decrease in non-conformities"
     },
     {
       icon: Clock,
       value: "60%",
-      label: "Time Savings",
-      description: "Reduced manual monitoring"
+      label: "Inspection Time Savings",
+      description: "Reduced manual checks"
     },
     {
       icon: Target,
       value: "99.2%",
-      label: "Quality Consistency", 
-      description: "Batch-to-batch precision"
+      label: "Compliance Accuracy", 
+      description: "Automated audit-ready logs"
     },
     {
       icon: Users,
       value: "150+",
-      label: "Happy Breweries",
-      description: "Worldwide partnerships"
+      label: "Enterprises Served",
+      description: "Global partnerships"
     }
   ];
 
@@ -36,7 +36,7 @@ const Stats = () => {
             Results That Matter
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Real metrics from breweries that chose intelligent optimization
+            Real metrics from enterprises that chose intelligent quality control
           </p>
         </div>
 

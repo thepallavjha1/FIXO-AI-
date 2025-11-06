@@ -17,7 +17,7 @@ const Header = () => {
           
           {/* Navigation - can be expanded later */}
           <nav className="hidden md:flex items-center space-x-8">
-            <a href="#features" className="text-muted-foreground hover:text-foreground transition-colors">
+            {/* <a href="#features" className="text-muted-foreground hover:text-foreground transition-colors">
               Features
             </a>
             <a href="#stats" className="text-muted-foreground hover:text-foreground transition-colors">
@@ -25,7 +25,7 @@ const Header = () => {
             </a>
             <a href="#contact" className="text-muted-foreground hover:text-foreground transition-colors">
               Contact
-            </a>
+            </a> */}
           </nav>
         </div>
       </div>

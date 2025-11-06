@@ -1,7 +1,7 @@
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import Stats from "@/components/Stats";
-import CTA from "@/components/CTA";
+// import CTA from "@/components/CTA";
 import Features from "@/components/Features";
 
 const Index = () => {
@@ -11,7 +11,7 @@ const Index = () => {
       <Hero />
       <Features />
       {/* <Stats /> */}
-      <CTA />
+      {/* <CTA /> */}
     </main>
   );
 };

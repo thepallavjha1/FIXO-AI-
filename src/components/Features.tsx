@@ -8,24 +8,24 @@ const Features = () => {
   const features = [
     {
       icon: Brain,
-      title: "AI Process Optimization",
-      description: "Advanced machine learning algorithms analyze your brewing process in real-time, identifying bottlenecks and optimizing production efficiency.",
-      stats: "35% Efficiency Boost",
+      title: "AI + IoT Integration",
+      description: "Intelligent sensors powered by AI algorithms monitor quality parameters across all business operations, from manufacturing to service delivery.",
+      stats: "Enhanced Quality",
       // image: hopsAiIcon,
       gradient: "tech-gradient"
     },
     {
       icon: Radar,
-      title: "IoT Monitoring Network", 
-      description: "Comprehensive sensor network monitors temperature, pressure, pH levels, and fermentation progress across all your brewing operations.",
-      stats: "24/7 Monitoring",
+      title: "Computer Vision Systems", 
+      description: "Advanced visual inspection technology detects defects, ensures compliance, and maintains quality standards across diverse industries and processes.",
+      stats: "Precision Detection",
       gradient: "brewery-gradient"
     },
     {
       icon: Zap,
-      title: "Drone Analytics",
-      description: "Autonomous drones provide aerial inspection of tanks, equipment maintenance insights, and facility security monitoring.",
-      stats: "99.9% Uptime",
+      title: "Drone Systems",
+      description: "Autonomous drone networks provide aerial quality monitoring, remote inspections, and real-time data collection for comprehensive business oversight.",
+      stats: "Continuous Monitoring",
       // image: droneIcon,
       gradient: "tech-gradient"
     }
@@ -36,12 +36,12 @@ const Features = () => {
       <div className="max-w-7xl mx-auto relative">
         <div className="text-center mb-20">
           <h2 className="text-4xl md:text-6xl font-black text-display mb-6 leading-tight">
-            <span className="text-foreground">Intelligent Brewing</span>
+            <span className="text-foreground">Intelligent</span>
             <br />
-            <span className="brewery-gradient bg-clip-text text-transparent">Technology Stack</span>
+            <span className="brewery-gradient bg-clip-text text-transparent">Quality Control Platform</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            Three pillars of modern brewery optimization working in perfect harmony
+            Three pillars powering cross-industry quality assurance and compliance
           </p>
         </div>
 
@@ -62,7 +62,7 @@ const Features = () => {
       <div className="absolute top-[-45%] left-[-10%] z-0 hidden lg:block">
               <img 
                 src={armImage} 
-                alt="Brewery element" 
+                alt="Automation element" 
                 className="w-[280px] sm:w-[350px] md:w-[450px] lg:w-[550px] xl:w-[700px] h-auto pointer-events-none"
               />
       </div>
@@ -70,7 +70,7 @@ const Features = () => {
       <div className="absolute top-[-25%] right-[-18%] w-90 h-auto z-0 hidden lg:block">
           <img 
             src={prodImage} 
-            alt="Floating brewery element" 
+            alt="Quality operations element" 
             className="w-[250px] sm:w-[320px] md:w-[400px] lg:w-[500px] xl:w-[650px] h-auto pointer-events-none"
           />
       </div>
